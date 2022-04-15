@@ -12,9 +12,12 @@ protected:
 	unsigned char rojo;
 	unsigned char verde;
 	unsigned char azul;
+	int tipo;//Se define el tipo de la pieza 0=peon , 1=alfil , 2=torre, 3=reina , 4=rey
 
 public:
 	Ficha();
+	Ficha(int _x, int _y,bool color);//Constructor de peones
+	Ficha(int _x, int _y, int _tipo,bool color);
 	~Ficha() {}
 	void Dibuja();
 

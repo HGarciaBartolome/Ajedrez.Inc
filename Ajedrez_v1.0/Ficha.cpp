@@ -6,9 +6,40 @@ Ficha::Ficha() {
 	ocupada = false;
 	marca = false;
 	next = false;
-
+	tipo = 0;
 }
-
+Ficha::Ficha(int _x, int _y,bool color)
+{
+	x = _x;
+	y = _y;
+	tipo = 0;
+	if (color == 0) {
+		rojo = 255;
+		azul = 255;
+		verde = 255;
+	}
+	else if (color ==1) {
+		rojo = 0;
+		azul = 0;
+		verde = 0;
+	}
+}
+Ficha::Ficha(int _x, int _y, int _tipo,bool color)
+{
+	x = _x;
+	y = _y;
+	tipo = _tipo;
+	if (color == 0) {
+		rojo = 255;
+		azul = 255;
+		verde = 255;
+	}
+	else if (color == 1) {
+		rojo = 0;
+		azul = 0;
+		verde = 0;
+	}
+}
 void Ficha::Dibuja() {
 	/*
 	//cilindro
