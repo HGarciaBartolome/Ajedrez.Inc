@@ -5,5 +5,17 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Modelo">
+      <UniqueIdentifier>{ece9c225-15ae-41dd-a2fb-95b3de700a95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vista">
+      <UniqueIdentifier>{8d92f85c-291a-4db8-ad6a-ea4098361f45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controlador">
+      <UniqueIdentifier>{0137d46a-2a62-4e86-a67d-aecb59409ec4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
 </Project>
