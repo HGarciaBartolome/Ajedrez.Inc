@@ -138,23 +138,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="Casilla.h" />
-    <ClInclude Include="Ficha.h" />
-    <ClInclude Include="Juego.h" />
-    <ClInclude Include="Mundo.h" />
-    <ClInclude Include="Tablero.h" />
-    <ClInclude Include="Vector2D.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Casilla.cpp" />
-    <ClCompile Include="Ficha.cpp" />
-    <ClCompile Include="Juego.cpp" />
-    <ClCompile Include="Mundo.cpp" />
-    <ClCompile Include="Source.cpp" />
-    <ClCompile Include="Tablero.cpp" />
-    <ClCompile Include="Vector2D.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
