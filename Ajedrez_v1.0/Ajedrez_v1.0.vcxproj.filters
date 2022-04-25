@@ -14,8 +14,25 @@
     <Filter Include="Controlador">
       <UniqueIdentifier>{0137d46a-2a62-4e86-a67d-aecb59409ec4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Modelo\src">
+      <UniqueIdentifier>{9d865a93-1cc8-4090-b159-5130cdd09472}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Tablero.cpp">
+      <Filter>Modelo\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Casilla.cpp">
+      <Filter>Modelo\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Tablero.h">
+      <Filter>Modelo\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Casilla.h">
+      <Filter>Modelo\src</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
