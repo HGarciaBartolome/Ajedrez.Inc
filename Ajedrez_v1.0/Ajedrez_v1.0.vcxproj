@@ -21,10 +21,12 @@
   <ItemGroup>
     <ClCompile Include="Casilla.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Peon.cpp" />
     <ClCompile Include="Tablero.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Casilla.h" />
+    <ClInclude Include="Peon.h" />
     <ClInclude Include="Tablero.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

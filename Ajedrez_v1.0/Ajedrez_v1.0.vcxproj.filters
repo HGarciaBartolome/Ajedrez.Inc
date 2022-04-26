@@ -26,12 +26,18 @@
     <ClCompile Include="Casilla.cpp">
       <Filter>Modelo\src</Filter>
     </ClCompile>
+    <ClCompile Include="Peon.cpp">
+      <Filter>Modelo\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Tablero.h">
       <Filter>Modelo\src</Filter>
     </ClInclude>
     <ClInclude Include="Casilla.h">
+      <Filter>Modelo\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Peon.h">
       <Filter>Modelo\src</Filter>
     </ClInclude>
   </ItemGroup>
