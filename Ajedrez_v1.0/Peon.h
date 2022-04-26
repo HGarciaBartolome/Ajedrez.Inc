@@ -1,6 +1,7 @@
 #pragma once
+#include "Ficha.h"
 
-class Peon {
+class Peon : public Ficha {
 
 
 
