@@ -1,0 +1,17 @@
+﻿  Ajedrez.cpp
+C:\Users\usuario\Desktop\AjedrezINC\src\Ajedrez.cpp(1,10): fatal error C1083: No se puede abrir el archivo incluir: 'ETSIDI.h': No such file or directory
+  Casilla.cpp
+C:\Users\usuario\Desktop\AjedrezINC\src\Casilla.h(2,10): fatal error C1083: No se puede abrir el archivo incluir: 'ETSIDI.H': No such file or directory
+  Ficha.cpp
+C:\Users\usuario\Desktop\AjedrezINC\src\Ficha.cpp(13,6): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\usuario\Desktop\AjedrezINC\src\Ficha.cpp(14,6): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\usuario\Desktop\AjedrezINC\src\Ficha.cpp(29,6): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\usuario\Desktop\AjedrezINC\src\Ficha.cpp(30,6): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\usuario\Desktop\AjedrezINC\src\Ficha.cpp(79,10): warning C4244: 'return': conversión de 'float' a 'int'; posible pérdida de datos
+  Juego.cpp
+C:\Users\usuario\Desktop\AjedrezINC\src\Casilla.h(2,10): fatal error C1083: No se puede abrir el archivo incluir: 'ETSIDI.H': No such file or directory
+  Mundo.cpp
+C:\Users\usuario\Desktop\AjedrezINC\src\Casilla.h(2,10): fatal error C1083: No se puede abrir el archivo incluir: 'ETSIDI.H': No such file or directory
+  Tablero.cpp
+C:\Users\usuario\Desktop\AjedrezINC\src\Casilla.h(2,10): fatal error C1083: No se puede abrir el archivo incluir: 'ETSIDI.H': No such file or directory
+  Generando código...
