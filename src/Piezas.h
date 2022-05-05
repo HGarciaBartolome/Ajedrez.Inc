@@ -13,9 +13,9 @@ public:
 	void setColor(unsigned char r, unsigned char v, unsigned char a);
 
 protected:
-
-Vector2D posicion;
-	ColorRGB color;
+	bool color;// True = Negras , False = Blancas
+	Vector2D posicion;
+	ColorRGB colorGraph;
 
 
 };
