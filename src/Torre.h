@@ -7,7 +7,7 @@ class Torre :public Pieza {
 
 protected:
 	
-	ETSIDI::Sprite ficha("imagenes/Cb.png", posicion.x, posicion.y, 1.0, 1.0);
+	//ETSIDI::Sprite ficha("imagenes/Cb.png", posicion.x, posicion.y, 1.0, 1.0);
 public:
 
 	Torre(bool _color, float _x, float _y);

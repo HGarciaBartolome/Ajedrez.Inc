@@ -18,7 +18,22 @@ Torre::Torre(bool _color, float _x, float _y)
 
 void Torre::Dibuja()
 {
-		ficha.draw();
+	glEnable(GL_TEXTURE_2D);
+	glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("imagenes/Cb.png").id);
+	//dibujo del plano donde está la foto
+	glDisable(GL_LIGHTING);
+	glEnable(GL_BLEND);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	glBegin(GL_POLYGON);
+	glColor3f(1, 1, 1);
+	glTexCoord2d(0, 1); glVertex3f(posicion.x - limite.x, posicion.y - limite.y, 0.01);
+	glTexCoord2d(1, 1); glVertex3f(posicion.x + limite.x, posicion.y - limite.y, 0.01); //se elige donde poner la imagen de fondo. ponemos -0.1 en z para que esté de fondo
+	glTexCoord2d(1, 0); glVertex3f(posicion.x + limite.x, posicion.y + limite.y, 0.01);
+	glTexCoord2d(0, 0); glVertex3f(posicion.x - limite.x, posicion.y + limite.y,0.01);
+	glEnd();
+	glDisable(GL_BLEND);
+	glEnable(GL_LIGHTING);
+	glDisable(GL_TEXTURE_2D);
 
 }
 

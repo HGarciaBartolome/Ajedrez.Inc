@@ -1,5 +1,10 @@
 #include "Piezas.h"
 
+Pieza::Pieza()
+{
+	limite.x = limite.y = 0.5;
+}
+
 void Pieza::setPosicion(float _x, float _y)
 {
 	posicion.x = _x;
