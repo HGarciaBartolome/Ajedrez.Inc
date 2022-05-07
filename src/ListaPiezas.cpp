@@ -19,10 +19,10 @@ ListaPiezas::ListaPiezas()
 bool ListaPiezas::agregarTorre(Torre* t)
 {
 
-	if (numTorre < MAXPIEZAS)
-		listaTorre[numTorre++] = t; // último puesto sin rellenar
+	if (numTorre < (MAXPIEZAS - numAlfil -numReina-numRey -numPeon -numTorre))
+		listaTorre[numTorre++] = t; // Ãºltimo puesto sin rellenar
 	else
-		return false; // capacidad máxima alcanzada
+		return false; // capacidad mÃ¡xima alcanzada
 	return true;
 
 }
@@ -30,10 +30,10 @@ bool ListaPiezas::agregarTorre(Torre* t)
 bool ListaPiezas::agregarPeon(Peon* p)
 {
 
-	if (numPeon < MAXPIEZAS)
-		listaPeon[numPeon++] = p; // último puesto sin rellenar
+	if (numPeon < (MAXPIEZAS - numAlfil -numReina-numRey -numPeon -numTorre))
+		listaPeon[numPeon++] = p; // Ãºltimo puesto sin rellenar
 	else
-		return false; // capacidad máxima alcanzada
+		return false; // capacidad mÃ¡xima alcanzada
 	return true;
 
 }
@@ -41,10 +41,10 @@ bool ListaPiezas::agregarPeon(Peon* p)
 bool ListaPiezas::agregarAlfil(Alfil* a)
 {
 
-	if (numAlfil < MAXPIEZAS)
-		listaAlfil[numAlfil++] = a; // último puesto sin rellenar
+	if (numAlfil < (MAXPIEZAS - numAlfil -numReina-numRey -numPeon -numTorre))
+		listaAlfil[numAlfil++] = a; // Ãºltimo puesto sin rellenar
 	else
-		return false; // capacidad máxima alcanzada
+		return false; // capacidad mÃ¡xima alcanzada
 	return true;
 
 }
@@ -52,10 +52,10 @@ bool ListaPiezas::agregarAlfil(Alfil* a)
 bool ListaPiezas::agregarReina(Reina* reina)
 {
 
-	if (numReina < MAXPIEZAS)
-		listaReina[numReina++] = reina; // último puesto sin rellenar
+	if (numReina < (MAXPIEZAS - numAlfil -numReina-numRey -numPeon -numTorre))
+		listaReina[numReina++] = reina; // Ãºltimo puesto sin rellenar
 	else
-		return false; // capacidad máxima alcanzada
+		return false; // capacidad mÃ¡xima alcanzada
 	return true;
 
 }
@@ -63,10 +63,10 @@ bool ListaPiezas::agregarReina(Reina* reina)
 bool ListaPiezas::agregarRey(Rey* rey)
 {
 
-	if (numRey < MAXPIEZAS)
-		listaRey[numRey++] = rey; // último puesto sin rellenar
+	if (numRey < (MAXPIEZAS - numAlfil -numReina-numRey -numPeon -numTorre))
+		listaRey[numRey++] = rey; // Ãºltimo puesto sin rellenar
 	else
-		return false; // capacidad máxima alcanzada
+		return false; // capacidad mÃ¡xima alcanzada
 	return true;
 
 }
