@@ -1,4 +1,10 @@
 #include "Mundo.h"
+#include "Peon.h"
+#include "Torre.h"
+#include "Alfil.h"
+#include "Reina.h"
+#include "Rey.h"
+#include <math.h>
 
 Mundo::Mundo()
 {
@@ -156,4 +162,32 @@ void Mundo::inicializa()
 	x_ojo = 4;
 	y_ojo = 4;
 	z_ojo = 15;
+	/*
+	for (int i = 0; i < 8; i++) {
+		Peon* auxp = new Peon(FALSE, i, 1);
+		piezas.agregarPeon(auxp);
+		Peon* auxp = new Peon(TRUE, i, 7);
+		piezas.agregarPeon(auxp);
+	}
+	for (int i = 0; i < 2; i++) {
+		Torre* auxt = new Torre(FALSE, i*8, 0);
+		piezas.agregarTorre(auxt);
+		Torre* auxt = new Torre(TRUE, i*8, 8);
+		piezas.agregarTorre(auxt);
+	}
+	for (int i = 0; i < 2; i++) {
+		Alfil* auxa = new Alfil(FALSE, abs((i * 8)-1), 0);
+		piezas.agregarAlfil(auxa);
+		Alfil* auxa1 = new Alfil(TRUE, abs((i * 8) - 1), 8);
+		piezas.agregarAlfil(auxa1);
+	}
+	Reina* auxr1 = new Reina(FALSE,  3, 0);
+	piezas.agregarReina(auxr1);
+	Reina* auxr = new Reina(TRUE, 4, 8);
+	piezas.agregarReina(auxr);
+	Rey* auxk1 = new Rey(FALSE, 3, 0);
+	piezas.agregarRey(auxk1);
+	Rey* auxk = new Rey(TRUE, 4, 8);
+	piezas.agregarRey(auxk);
+	*/
 }

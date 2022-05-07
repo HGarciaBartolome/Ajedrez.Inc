@@ -9,4 +9,6 @@ public:
 	void Dibuja();
 	void mueve(Vector2D);
 
+	Alfil(bool _color, float _x, float _y);
+
 };

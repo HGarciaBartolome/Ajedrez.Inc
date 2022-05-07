@@ -70,3 +70,7 @@ bool ListaPiezas::agregarRey(Rey* rey)
 	return true;
 
 }
+
+void ListaPiezas::incializa() {
+	
+}

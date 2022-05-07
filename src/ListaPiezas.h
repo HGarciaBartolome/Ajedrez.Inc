@@ -12,10 +12,11 @@ class ListaPiezas {
 public:
 	ListaPiezas();
 	bool agregarTorre(Torre* t);
-	bool agregarPeon(Peon* t);
-	bool agregarAlfil(Alfil* t);
-	bool agregarReina(Reina* t);
-	bool agregarRey(Rey* t);
+	bool agregarPeon(Peon* p);
+	bool agregarAlfil(Alfil* a);
+	bool agregarReina(Reina* reina);
+	bool agregarRey(Rey* rey);
+	void incializa();
 private:
 	
 	int numPeon, numAlfil,numReina, numTorre,numRey;//Numeros para contar cantidad de piezas

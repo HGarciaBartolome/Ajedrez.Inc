@@ -42,3 +42,10 @@ void Peon::Dibuja()
 void Peon::mueve(Vector2D)
 {
 }
+ 
+Peon::Peon(bool _color, float _x, float _y)
+{
+	color = _color;
+	posicion.x = _x;
+	posicion.y = _y;
+}

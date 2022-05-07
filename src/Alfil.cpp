@@ -43,3 +43,9 @@ void Alfil::Dibuja()
 void Alfil::mueve(Vector2D)
 {
 }
+Alfil::Alfil(bool _color, float _x, float _y)
+{
+	color = _color;
+	posicion.x = _x;
+	posicion.y = _y;
+}

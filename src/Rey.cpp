@@ -22,7 +22,7 @@ void Rey::Dibuja()
 	}
 	else if (color == TRUE) {
 		glEnable(GL_TEXTURE_2D);
-		glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("imagenes/Kn.png").id);
+		glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("imagenes/n.png").id);
 		glDisable(GL_LIGHTING);
 		glEnable(GL_BLEND);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -41,4 +41,11 @@ void Rey::Dibuja()
 
 void Rey::mueve(Vector2D)
 {
+}
+
+Rey::Rey(bool _color, float _x, float _y)
+{
+	color = _color;
+	posicion.x = _x;
+	posicion.y = _y;
 }

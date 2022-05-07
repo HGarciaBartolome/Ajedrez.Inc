@@ -1,18 +1,19 @@
 #pragma once
 #include "Tablero.h"
 #include "ETSIDI.h"
-
+#include "ListaPiezas.h"
 class Mundo {
 public:
 	float x_ojo;
 	float y_ojo;
 	float z_ojo;
+	ListaPiezas piezas;
 public:
 	Mundo();
 	virtual ~Mundo();
 
 	Tablero tablero;
-
+	
 	enum Modo {COMIENZO, PVP, AYUDA};
 	Modo m;
 
