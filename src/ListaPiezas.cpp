@@ -16,22 +16,57 @@ ListaPiezas::ListaPiezas()
 	}
 }
 
-void ListaPiezas::agregarTorre(Torre* t)
+bool ListaPiezas::agregarTorre(Torre* t)
 {
+
+	if (numTorre < MAXPIEZAS)
+		listaTorre[numTorre++] = t; // último puesto sin rellenar
+	else
+		return false; // capacidad máxima alcanzada
+	return true;
+
 }
 
-void ListaPiezas::agregarPeon(Peon* t)
+bool ListaPiezas::agregarPeon(Peon* p)
 {
+
+	if (numPeon < MAXPIEZAS)
+		listaPeon[numPeon++] = p; // último puesto sin rellenar
+	else
+		return false; // capacidad máxima alcanzada
+	return true;
+
 }
 
-void ListaPiezas::agregarAlfil(Alfil* t)
+bool ListaPiezas::agregarAlfil(Alfil* a)
 {
+
+	if (numAlfil < MAXPIEZAS)
+		listaAlfil[numAlfil++] = a; // último puesto sin rellenar
+	else
+		return false; // capacidad máxima alcanzada
+	return true;
+
 }
 
-void ListaPiezas::agregarReina(Reina* t)
+bool ListaPiezas::agregarReina(Reina* reina)
 {
+
+	if (numReina < MAXPIEZAS)
+		listaReina[numReina++] = reina; // último puesto sin rellenar
+	else
+		return false; // capacidad máxima alcanzada
+	return true;
+
 }
 
-void ListaPiezas::agregarRey(Rey* t)
+bool ListaPiezas::agregarRey(Rey* rey)
 {
+
+	if (numRey < MAXPIEZAS)
+		listaRey[numRey++] = rey; // último puesto sin rellenar
+	else
+		return false; // capacidad máxima alcanzada
+	return true;
+
 }
