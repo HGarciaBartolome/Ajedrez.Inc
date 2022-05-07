@@ -163,6 +163,7 @@ void Mundo::inicializa()
 	x_ojo = 4;
 	y_ojo = 4;
 	z_ojo = 15;
+
 	for (int i = 0; i < 8; i++) {
 		Peon* auxp1 = new Peon(FALSE, i, 1);
 		piezas.agregarPeon(auxp1);
@@ -175,16 +176,19 @@ void Mundo::inicializa()
 		Torre* auxt = new Torre(TRUE, i*7, 7);
 		piezas.agregarTorre(auxt);
 	}
+
 	for (int i = 0; i < 2; i++) {
-		Alfil* auxa = new Alfil(FALSE, abs((i * 7)-1), 0);
+		Alfil* auxa = new Alfil(FALSE, abs((i * 7)-2), 0);
 		piezas.agregarAlfil(auxa);
-		Alfil* auxa1 = new Alfil(TRUE, abs((i * 7) - 1), 7);
+		Alfil* auxa1 = new Alfil(TRUE, abs((i * 7) - 2), 7);
 		piezas.agregarAlfil(auxa1);
 	}
+
 	Reina* auxr1 = new Reina(FALSE,  3, 0);
 	piezas.agregarReina(auxr1);
 	Reina* auxr = new Reina(TRUE, 4, 7);
 	piezas.agregarReina(auxr);
+
 	Rey* auxk1 = new Rey(FALSE, 4, 0);
 	piezas.agregarRey(auxk1);
 	Rey* auxk = new Rey(TRUE, 3, 7);

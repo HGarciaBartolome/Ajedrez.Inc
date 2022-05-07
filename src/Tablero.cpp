@@ -33,3 +33,42 @@ void Tablero::dibuja(){
 
 }
 
+void Tablero::Inicializa()
+{
+
+	/*enum piezas {
+		REYN, REYB,
+		REINAN, REINAB,
+		ALFILN, ALFILB,
+		TORREN, TORREB,
+		PEONN, PEONB,
+		VACIO = -1
+	}pieza;*/
+
+	casilla[0][0].setPieza(7);
+	casilla[2][0].setPieza(5);
+	casilla[3][0].setPieza(3);
+	casilla[4][0].setPieza(1);
+	casilla[5][0].setPieza(5);
+	casilla[7][0].setPieza(7);
+	
+	for ( int i = 0; i < 7; i++) {
+		int j = 1;
+		casilla[i][j].setPieza(9);
+	}
+
+	casilla[0][7].setPieza(6);
+	casilla[2][7].setPieza(4);
+	casilla[3][7].setPieza(2);
+	casilla[4][7].setPieza(0);
+	casilla[5][7].setPieza(4);
+	casilla[7][7].setPieza(6);
+
+	for ( int i = 0; i < 7; i++) {
+		int j = 6;
+		casilla[i][j].setPieza(8);
+	}
+
+}
+
+
