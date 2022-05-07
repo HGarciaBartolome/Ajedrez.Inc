@@ -5,7 +5,6 @@
 #include "Torre.h"
 Mundo mundo;
 
-Torre prueba(FALSE,0 , 0);
 //los callback, funciones que seran llamadas automaticamente por la glut
 //cuando sucedan eventos
 //NO HACE FALTA LLAMARLAS EXPLICITAMENTE
@@ -54,7 +53,6 @@ void OnDraw(void)
 	glLoadIdentity();
 	
 	mundo.dibuja();
-	prueba.Dibuja();
 	//no borrar esta linea ni poner nada despues
 	glutSwapBuffers();
 }

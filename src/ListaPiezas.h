@@ -17,6 +17,7 @@ public:
 	bool agregarReina(Reina* reina);
 	bool agregarRey(Rey* rey);
 	void incializa();
+	void dibuja();
 private:
 	
 	int numPeon, numAlfil,numReina, numTorre,numRey;//Numeros para contar cantidad de piezas

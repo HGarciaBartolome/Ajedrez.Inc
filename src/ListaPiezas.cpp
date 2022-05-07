@@ -74,3 +74,21 @@ bool ListaPiezas::agregarRey(Rey* rey)
 void ListaPiezas::incializa() {
 	
 }
+
+void ListaPiezas::dibuja() {
+	for (int i = 0; i < numAlfil; i++) {
+		listaAlfil[i]->Dibuja();
+	}
+	for (int i = 0; i < numTorre; i++) {
+		listaTorre[i]->Dibuja();
+	}
+	for (int i = 0; i < numPeon; i++) {
+		listaPeon[i]->Dibuja();
+	}
+	for (int i = 0; i < numRey; i++) {
+		listaRey[i]->Dibuja();
+	}
+	for (int i = 0; i < numReina; i++) {
+		listaReina[i]->Dibuja();
+	}
+}

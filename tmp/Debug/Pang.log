@@ -1,64 +1,11 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(514,5): warning MSB8028: El directorio intermedio (tmp\Debug\) contiene archivos compartidos de otro proyecto (Pang.vcxproj). Esto puede dar lugar a un comportamiento incorrecto de limpieza y recompilación.
-  ListaPiezas.cpp
-  Mundo.cpp
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Torre.h(6,13): error C2011: 'Torre': nueva definición del tipo 'class'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Torre.h(6): message : vea la declaración de 'Torre'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(75,49): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(76,48): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(77,46): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(78,47): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(105,49): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(106,48): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(107,46): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(108,47): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(126,49): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(127,48): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(128,46): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(129,47): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(148,49): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(149,48): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(150,46): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(151,47): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(166,32): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(168,9): error C2374: 'auxp': nueva definición; inicialización múltiple
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(166): message : vea la declaración de 'auxp'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(168,31): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(172,41): error C2027: uso del tipo 'Torre' sin definir
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Torre.h(6): message : vea la declaración de 'Torre'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(174,10): error C2374: 'auxt': nueva definición; inicialización múltiple
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(172): message : vea la declaración de 'auxt'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(174,40): error C2027: uso del tipo 'Torre' sin definir
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Torre.h(6): message : vea la declaración de 'Torre'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(178,37): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(180,10): error C2374: 'auxa': nueva definición; inicialización múltiple
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(178): message : vea la declaración de 'auxa'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(180,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(185,9): error C2374: 'auxr': nueva definición; inicialización múltiple
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(183): message : vea la declaración de 'auxr'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(189,7): error C2374: 'auxk': nueva definición; inicialización múltiple
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(187): message : vea la declaración de 'auxk'
-  Ajedrez.cpp
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Torre.h(6,13): error C2011: 'Torre': nueva definición del tipo 'class'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Torre.h(6): message : vea la declaración de 'Torre'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Ajedrez.cpp(8,7): error C2079: 'prueba' utiliza class 'Torre' sin definir
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Ajedrez.cpp(8,25): error C2440: 'inicializando': no se puede realizar la conversión de 'initializer list' a 'int'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Ajedrez.cpp(8,13): message : El inicializador contiene demasiados elementos
-  Peon.cpp
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Peon.cpp(14,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Peon.cpp(15,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Peon.cpp(16,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Peon.cpp(17,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Peon.cpp(31,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Peon.cpp(32,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Peon.cpp(33,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Peon.cpp(34,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-  Torre.cpp
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Torre.cpp(26,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Torre.cpp(27,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Torre.cpp(28,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Torre.cpp(29,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Torre.cpp(43,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Torre.cpp(44,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Torre.cpp(45,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Torre.cpp(46,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-  Generando código...
+  Rey.cpp
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\Rey.cpp(14,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\Rey.cpp(15,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\Rey.cpp(16,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\Rey.cpp(17,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\Rey.cpp(31,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\Rey.cpp(32,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\Rey.cpp(33,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\Rey.cpp(34,84): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+  Pang.vcxproj -> C:\Users\Hector\source\repos\Ajedrez.Inc\bin\Ajedrez.exe
