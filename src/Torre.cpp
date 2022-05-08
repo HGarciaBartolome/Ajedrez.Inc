@@ -6,7 +6,7 @@
 
 
 
-Torre::Torre(bool _color, float _x, float _y)
+Torre::Torre(bool _color, int _x, int _y)
 {
 	color = _color;
 	posicion.x = _x;

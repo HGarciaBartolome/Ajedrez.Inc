@@ -36,39 +36,38 @@ void Tablero::dibuja(){
 void Tablero::Inicializa()
 {
 
-	/*enum piezas {
-		REYN, REYB,
-		REINAN, REINAB,
-		ALFILN, ALFILB,
-		TORREN, TORREB,
-		PEONN, PEONB,
-		VACIO = -1
-	}pieza;*/
-
-	casilla[0][0].setPieza(7);
-	casilla[2][0].setPieza(5);
-	casilla[3][0].setPieza(3);
-	casilla[4][0].setPieza(1);
-	casilla[5][0].setPieza(5);
-	casilla[7][0].setPieza(7);
+	//BLANCAS
+	casilla[0][0].setPieza(TORREB);
+	casilla[2][0].setPieza(ALFILB);
+	casilla[3][0].setPieza(REINAB);
+	casilla[4][0].setPieza(REYB);
+	casilla[5][0].setPieza(ALFILB);
+	casilla[7][0].setPieza(TORREB);
 	
 	for ( int i = 0; i < 7; i++) {
 		int j = 1;
-		casilla[i][j].setPieza(9);
+		casilla[i][j].setPieza(PEONB);
 	}
 
-	casilla[0][7].setPieza(6);
-	casilla[2][7].setPieza(4);
-	casilla[3][7].setPieza(2);
-	casilla[4][7].setPieza(0);
-	casilla[5][7].setPieza(4);
-	casilla[7][7].setPieza(6);
+	//NEGRAS
+	casilla[0][7].setPieza(TORREN);
+	casilla[2][7].setPieza(ALFILN);
+	casilla[3][7].setPieza(REINAN);
+	casilla[4][7].setPieza(REYN);
+	casilla[5][7].setPieza(ALFILN);
+	casilla[7][7].setPieza(TORREN);
 
 	for ( int i = 0; i < 7; i++) {
 		int j = 6;
-		casilla[i][j].setPieza(8);
+		casilla[i][j].setPieza(PEONN);
 	}
 
+	//VACIAS
+	for (int i = 0; i < 7; i++) {
+		for (int j = 2; j < 6; j++) {
+			casilla[i][j].setPieza(VACIO);
+		}
+	}
 }
 
 

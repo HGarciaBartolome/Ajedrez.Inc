@@ -8,5 +8,5 @@ private:
 public:
 	void Dibuja();
 	void mueve(Vector2D);
-	Reina(bool _color, float _x, float _y);
+	Reina(bool _color, int _x, int _y);
 };

@@ -30,10 +30,9 @@ void Casilla::setColor(unsigned char r, unsigned char g, unsigned char b) {
 	color.b = b;
 }
 
-void Casilla::setPieza(int p)
+void Casilla::setPieza(int pieza)
 {
-	int a;
-	switch (p) {
+	switch (pieza) {
 
 	case 0: 
 		a = 0; //REYN

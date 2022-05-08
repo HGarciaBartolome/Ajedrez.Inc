@@ -10,7 +10,7 @@ protected:
 	//ETSIDI::Sprite ficha("imagenes/Cb.png", posicion.x, posicion.y, 1.0, 1.0);
 public:
 
-	Torre(bool _color, float _x, float _y);
+	Torre(bool _color, int _x, int _y);
 	void Dibuja();
 	void mueve(Vector2D _pos);
 

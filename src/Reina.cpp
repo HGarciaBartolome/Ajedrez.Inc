@@ -42,7 +42,7 @@ void Reina::Dibuja()
 void Reina::mueve(Vector2D)
 {
 }
-Reina::Reina(bool _color, float _x, float _y)
+Reina::Reina(bool _color, int _x, int _y)
 {
 	color = _color;
 	posicion.x = _x;

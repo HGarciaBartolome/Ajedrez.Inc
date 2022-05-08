@@ -43,7 +43,7 @@ void Rey::mueve(Vector2D)
 {
 }
 
-Rey::Rey(bool _color, float _x, float _y)
+Rey::Rey(bool _color, int _x, int _y)
 {
 	color = _color;
 	posicion.x = _x;
