@@ -10,5 +10,6 @@ public:
 	void mueve(Vector2D);
 
 	Alfil(bool _color, int _x, int _y);
+	bool puedeMover(int ix, int iy, Pieza* p);
 
 };
