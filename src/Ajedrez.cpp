@@ -4,7 +4,6 @@
 #include "Piezas.h"
 #include "Torre.h"
 Mundo mundo;
-Mundo mundo2;
 
 //los callback, funciones que seran llamadas automaticamente por la glut
 //cuando sucedan eventos
@@ -74,7 +73,7 @@ void OnSpecialKeyboardDown(int key, int x, int y)
 
 void OnTimer(int value)
 {
-//poner aqui el código de animacion
+//poner aqui el cÃ³digo de animacion
 	//mundo.mueve();
 
 	//no borrar estas lineas
