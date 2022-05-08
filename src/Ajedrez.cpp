@@ -4,6 +4,7 @@
 #include "Piezas.h"
 #include "Torre.h"
 Mundo mundo;
+Mundo mundo2;
 
 //los callback, funciones que seran llamadas automaticamente por la glut
 //cuando sucedan eventos
