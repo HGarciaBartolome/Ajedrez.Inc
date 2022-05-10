@@ -2,7 +2,16 @@
 
 Pieza::Pieza()
 {
-	limite.x = limite.y = 0.5;
+}
+
+int Pieza::getPosicionX()
+{
+	return posicion.x;
+}
+
+int Pieza::getPosicionY()
+{
+	return posicion.y;
 }
 
 void Pieza::setPosicion(float _x, float _y)

@@ -1,18 +1,22 @@
 #pragma once 
 #include "ColorRGB.h"
 #include "Vector2D.h"
+#include "Piezas.h"
 
 class Casilla {
 private:
-	ColorRGB color;
-	Vector2D limite;
 	float x, y;
-	int a;
+	ColorRGB color;
+	Pieza pieza;
 public:
 	Casilla();
 	virtual ~Casilla(){};
+	
 	void dibuja();
-	void setPos(int ix, int iy);
 	void setColor(unsigned char r, unsigned char g, unsigned char b);
-	void setPieza(int pieza);
+
+	void setPos(int ix, int iy);
+	Pieza getPieza();
+	void setPieza(Pieza pieza);
+	void iluminaCasilla();
 };

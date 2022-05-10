@@ -45,6 +45,9 @@
     <ClInclude Include="src\Torre.h" />
     <ClInclude Include="src\Vector2D.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>

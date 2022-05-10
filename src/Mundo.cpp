@@ -85,7 +85,7 @@ void Mundo::dibuja() {
 	else if (m == PVP && f == NO)
 	{
 		gluLookAt(x_ojo, y_ojo, z_ojo,
-			4, y_ojo, 4.0,
+			4.0, y_ojo, 0.0,
 			0.0, 1.0, 0.0);
 
 		tablero.dibuja();
@@ -194,4 +194,115 @@ void Mundo::inicializa()
 	Rey* auxk = new Rey(TRUE, 3, 7);
 	piezas.agregarRey(auxk);
 	
+}
+
+void Mundo::Mouse(int button, int state, int x, int y)
+{
+	if ((button == GLUT_LEFT_BUTTON) && (state == GLUT_DOWN))
+	{
+
+		if (x >= 153 && x < 207) {
+			
+			v.x = 0;
+			if (y >= 493 && y < 547) v.y = 0;
+			if (y >= 438 && y < 493) v.y = 1;
+			if (y >= 383 && y < 438) v.y = 2;
+			if (y >= 328 && y < 383) v.y = 3;
+			if (y >= 273 && y < 326) v.y = 4;
+			if (y >= 218 && y < 273) v.y = 5;
+			if (y >= 163 && y < 218) v.y = 6;
+			if (y >= 108 && y < 163) v.y = 7;
+		};
+		if (x >= 207 && x < 263) {
+
+			v.x = 1;
+			if (y >= 493 && y < 547) v.y = 0;
+			if (y >= 438 && y < 493) v.y = 1;
+			if (y >= 383 && y < 438) v.y = 2;
+			if (y >= 328 && y < 383) v.y = 3;
+			if (y >= 273 && y < 328) v.y = 4;
+			if (y >= 218 && y < 273) v.y = 5;
+			if (y >= 163 && y < 218) v.y = 6;
+			if (y >= 108 && y < 163) v.y = 7;
+		}
+		if (x >= 263 && x < 318) {
+
+			v.x = 2;
+			if (y >= 493 && y < 547) v.y = 0;
+			if (y >= 438 && y < 493) v.y = 1;
+			if (y >= 383 && y < 438) v.y = 2;
+			if (y >= 328 && y < 383) v.y = 3;
+			if (y >= 273 && y < 328) v.y = 4;
+			if (y >= 218 && y < 273) v.y = 5;
+			if (y >= 163 && y < 218) v.y = 6;
+			if (y >= 108 && y < 163) v.y = 7;
+		}
+		if (x >= 318 && x < 373) {
+
+			v.x = 3;
+			if (y >= 493 && y < 547) v.y = 0;
+			if (y >= 438 && y < 493) v.y = 1;
+			if (y >= 383 && y < 438) v.y = 2;
+			if (y >= 328 && y < 383) v.y = 3;
+			if (y >= 273 && y < 328) v.y = 4;
+			if (y >= 218 && y < 273) v.y = 5;
+			if (y >= 163 && y < 218) v.y = 6;
+			if (y >= 108 && y < 163) v.y = 7;
+		}
+		if (x >= 373 && x < 428) {
+			v.x = 4;
+			if (y >= 493 && y < 547) v.y = 0;
+			if (y >= 438 && y < 493) v.y = 1;
+			if (y >= 383 && y < 438) v.y = 2;
+			if (y >= 328 && y < 383) v.y = 3;
+			if (y >= 273 && y < 328) v.y = 4;
+			if (y >= 218 && y < 273) v.y = 5;
+			if (y >= 163 && y < 218) v.y = 6;
+			if (y >= 108 && y < 163) v.y = 7;
+		}
+		if (x >= 428 && x < 483) {
+
+			v.x = 5;
+			if (y >= 493 && y < 547) v.y = 0;
+			if (y >= 438 && y < 493) v.y = 1;
+			if (y >= 383 && y < 438) v.y = 2;
+			if (y >= 328 && y < 383) v.y = 3;
+			if (y >= 273 && y < 328) v.y = 4;
+			if (y >= 218 && y < 273) v.y = 5;
+			if (y >= 163 && y < 218) v.y = 6;
+			if (y >= 108 && y < 163) v.y = 7;
+		}
+		if (x >= 483 && x < 538) {
+
+			v.x = 6;
+			if (y >= 493 && y < 547) v.y = 0;
+			if (y >= 438 && y < 493) v.y = 1;
+			if (y >= 383 && y < 438) v.y = 2;
+			if (y >= 328 && y < 383) v.y = 3;
+			if (y >= 273 && y < 328) v.y = 4;
+			if (y >= 218 && y < 273) v.y = 5;
+			if (y >= 163 && y < 218) v.y = 6;
+			if (y >= 108 && y < 163) v.y = 7;
+		}
+		if (x >= 538 && x < 593) {
+			v.x = 7;
+			if (y >= 493 && y < 547) v.y = 0;
+			if (y >= 438 && y < 493) v.y = 1;
+			if (y >= 383 && y < 438) v.y = 2;
+			if (y >= 328 && y < 383) v.y = 3;
+			if (y >= 273 && y < 328) v.y = 4;
+			if (y >= 218 && y < 273) v.y = 5;
+			if (y >= 163 && y < 218) v.y = 6;
+			if (y >= 108 && y < 163) v.y = 7;
+		}
+
+	}
+
+	tablero.ilumina(v);
+
+
+	//FUNCIONES DE SELECCIONAR CASILLAS
+
+	tablero.seleccionarCasilla(v);
+
 }

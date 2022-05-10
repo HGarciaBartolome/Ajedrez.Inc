@@ -8,11 +8,14 @@ public:
 	float y_ojo;
 	float z_ojo;
 	ListaPiezas piezas;
+	int x, j;
 public:
 	Mundo();
 	virtual ~Mundo();
 
 	Tablero tablero;
+	Vector2D v;
+	Vector2D guarda;
 	
 	enum Modo {COMIENZO, PVP, AYUDA};
 	Modo m;
@@ -23,4 +26,5 @@ public:
 	void dibuja();
 	void tecla(unsigned char key);
 	void inicializa();
+	void Mouse(int button, int state, int x, int y);
 };

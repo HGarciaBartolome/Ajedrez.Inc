@@ -11,8 +11,8 @@ protected:
 public:
 
 	Torre(bool _color, int _x, int _y);
+	~Torre() {};
+
 	void Dibuja();
 	void mueve(Vector2D _pos);
-
-
 };
