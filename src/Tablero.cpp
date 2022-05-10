@@ -10,7 +10,6 @@ Tablero::Tablero() {
 	
 	bool Negro = true;
 
-
 	for (int i = 0;i < NCASILLAS;i++)
 	{
 		for (int j = 0;j < NCASILLAS;j++)
@@ -18,9 +17,9 @@ Tablero::Tablero() {
 			casilla[i][j].setPos(i, j);
 
 			if (Negro)
-				casilla[i][j].setColor(128, 64, 0);
+				casilla[i][j].setColor(84, 56, 34);
 			else
-				casilla[i][j].setColor(213, 209, 191);
+				casilla[i][j].setColor(171, 139, 98);
 
 			if (j != NCASILLAS - 1)
 				Negro = !Negro;
@@ -117,6 +116,30 @@ void Tablero::Inicializa()
 void Tablero::ilumina(Vector2D ilu)
 {
 	casilla[ilu.x][ilu.y].iluminaCasilla();
+}
+
+void Tablero::desilumina(Vector2D desilu)
+{
+
+	bool Negro = true;
+
+
+	for (int i = 0; i < NCASILLAS; i++)
+	{
+		for (int j = 0; j < NCASILLAS; j++)
+		{
+			casilla[i][j].setPos(i, j);
+
+			if (Negro)
+				casilla[i][j].setColor(84, 56, 34);
+			else
+				casilla[i][j].setColor(171, 139, 98);
+
+			if (j != NCASILLAS - 1)
+				Negro = !Negro;
+		}
+	}
+
 }
 
 void Tablero::seleccionarCasilla(Vector2D pos)

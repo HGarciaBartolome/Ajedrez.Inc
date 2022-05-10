@@ -43,10 +43,6 @@ void Casilla::setPieza(Pieza pieza)
 
 void Casilla::iluminaCasilla()
 {
-
-	color.r = 255;
-	color.b = color.g= 0;
-
-
+	color.r = color.b = color.g= 255;
 }
 
