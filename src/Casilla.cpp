@@ -4,6 +4,7 @@
 
 Casilla::Casilla() {
 	x = y = 0;
+	ocup = Ficha::VACIO;
 }
 
 void Casilla::dibuja() {

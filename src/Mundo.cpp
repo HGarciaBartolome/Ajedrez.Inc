@@ -160,6 +160,7 @@ void Mundo::dibuja() {
 
 void Mundo::inicializa()
 {
+	tablero.Inicializa();
 	x_ojo = 4;
 	y_ojo = 4;
 	z_ojo = 15;
@@ -299,16 +300,22 @@ void Mundo::Mouse(int button, int state, int x, int y)
 	}
 
 	tablero.desilumina(v);
+	
 	tablero.ilumina(v);
-
 	//FUNCIONES DE SELECCIONAR CASILLAS
-	if (tablero.hacerMovimiento(v)) {
+	//if () {
+	//Movimiento(v);
+	tablero.seleccionarCasilla(v);
+	tablero.hacerMovimiento(v);
+	tablero.Matriz();
+	if (tablero.Qmov == TRUE) {
 		Movimiento(v);
 	}
+	//}
 
 }
 
 void Mundo::Movimiento(Vector2D aux) {
 	piezas.movimiento(aux,tablero.getcasillaSelecionada());
-
+	tablero.Qmov = false;
 }

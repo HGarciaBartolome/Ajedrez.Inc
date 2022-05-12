@@ -1,11 +1,12 @@
 #include "Tablero.h"
 #define NCASILLAS 8
 #include "Mundo.h"
+#include <iostream>
 Tablero::Tablero() {
 	
 	Casilla c;
 	c.setPos(-1, -1);	//ninguna casilla seleccionada
-
+	runMov= runSelec =Qmov =false;
 	casillaSeleccionada = c;
 	
 	bool Negro = true;
@@ -25,6 +26,7 @@ Tablero::Tablero() {
 				Negro = !Negro;
 		}
 	}
+	
 }
 
 void Tablero::dibuja(){
@@ -84,7 +86,7 @@ void Tablero::Inicializa()
 	casilla[5][0].setPieza(Ficha::ALFILB);
 	casilla[7][0].setPieza(Ficha::TORREB);
 	
-	for ( int i = 0; i < 7; i++) {
+	for ( int i = 0; i < 8; i++) {
 		int j = 1;
 		casilla[i][j].setPieza(Ficha::PEONB);
 	}
@@ -92,12 +94,12 @@ void Tablero::Inicializa()
 	//NEGRAS
 	casilla[0][7].setPieza(Ficha::TORREN);
 	casilla[2][7].setPieza(Ficha::ALFILN);
-	casilla[3][7].setPieza(Ficha::REINAN);
-	casilla[4][7].setPieza(Ficha::REYN);
+	casilla[4][7].setPieza(Ficha::REINAN);
+	casilla[3][7].setPieza(Ficha::REYN);
 	casilla[5][7].setPieza(Ficha::ALFILN);
 	casilla[7][7].setPieza(Ficha::TORREN);
 
-	for ( int i = 0; i < 7; i++) {
+	for ( int i = 0; i < 8; i++) {
 		int j = 6;
 		casilla[i][j].setPieza(Ficha::PEONN);
 	}
@@ -110,12 +112,12 @@ void Tablero::Inicializa()
 			casilla[i][j].setPieza(Ficha::VACIO);
 		}
 	}
-	resetcasillaSelecionada();
+	//resetcasillaSelecionada();
 }
 
 Casilla Tablero::getcasillaSelecionada()
 {
-	return casillaSeleccionada;
+	return casillaOld;
 }
 
 
@@ -150,8 +152,14 @@ void Tablero::desilumina(Vector2D desilu)
 
 void Tablero::seleccionarCasilla(Vector2D pos)
 {
-	casillaSeleccionada = getCasilla(pos);
-
+	if (runSelec == false) {
+		runSelec = true;
+	}
+	else {
+		casillaOld = casillaSeleccionada;
+		casillaSeleccionada = getCasilla(pos);
+		runSelec = false;
+	}
 	// Iluminar casilla
 	// Desiluminar la que estuviera seleccionada antes
 }
@@ -159,20 +167,25 @@ void Tablero::seleccionarCasilla(Vector2D pos)
 bool Tablero::hacerMovimiento(Vector2D aux)
 {	
 	// TODO: comprobar que se pueda hacer el movimiento
-	if (&casillaSeleccionada== NULL){
-		casillaSeleccionada = casilla[aux.x][aux.y];
-		return false;
+	if(runMov==false){
+		runMov = true;
 	}
 	else {
+		//std::cout << casillaOld.getPosX() << " # " << casillaOld.getPosY() << " # " << int(casillaOld.getPieza()) << "\n";
 		// Actualizar a vacio la vieja
-		Ficha piezaActual = casillaSeleccionada.getPieza();
-		casilla[casillaSeleccionada.getPosX()][casillaSeleccionada.getPosY()].setPieza(Ficha::VACIO);
-		// Asignar la nueva posicion
-		casilla[aux.x][aux.y].setPieza(piezaActual);
-		return true;
+		if (casillaOld.getPieza() != Ficha::VACIO) {
+			Ficha piezaActual = casillaOld.getPieza();
+			casilla[casillaOld.getPosX()][casillaOld.getPosY()].setPieza(Ficha::VACIO);
+
+			// Asignar la nueva posicion
+			casilla[casillaSeleccionada.getPosX()][casillaSeleccionada.getPosY()].setPieza(piezaActual);
+			Qmov = true;
+			runMov = false;
+			return true;
+		}
+	}
 		//Casilla* limpia = &casillaSeleccionada;
 		//limpia = NULL;
-	}
 	// TODO: Dibujar
 }
 void Tablero::resetcasillaSelecionada()
@@ -183,4 +196,13 @@ void Tablero::resetcasillaSelecionada()
 Casilla Tablero::getCasilla(Vector2D pos)
 {
 	return casilla[pos.x][pos.y];
+}
+
+void Tablero::Matriz(){
+	for (int j = 0; j < 8; j++) {
+		for (int i = 0; i < 8; i++) {
+			std::cout << int(casilla[i][j].getPieza()) << "  ";
+		}
+		std::cout  << "\n";
+	}
 }

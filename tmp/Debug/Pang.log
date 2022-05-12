@@ -1,24 +1,23 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(514,5): warning MSB8028: El directorio intermedio (tmp\Debug\) contiene archivos compartidos de otro proyecto (Pang.vcxproj). Esto puede dar lugar a un comportamiento incorrecto de limpieza y recompilación.
-  Ajedrez.cpp
-  Mundo.cpp
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(75,49): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(76,48): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(77,46): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(78,47): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(106,49): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(107,48): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(108,46): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(109,47): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(127,49): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(128,48): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(129,46): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(130,47): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(149,49): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(150,48): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(151,46): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Mundo.cpp(152,47): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-  Tablero.cpp
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Tablero.cpp(109,26): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\Tablero.cpp(109,23): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-  Generando código...
+  ListaPiezas.cpp
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(80,42): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(80,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(90,43): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(90,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(100,43): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(100,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(110,43): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(110,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(120,41): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(120,34): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(130,41): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(130,34): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(140,43): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(140,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(150,43): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(150,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(160,42): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(160,35): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(170,42): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(170,35): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
   Pang.vcxproj -> C:\Users\Hector\source\repos\Ajedrez.Inc\bin\Ajedrez.exe

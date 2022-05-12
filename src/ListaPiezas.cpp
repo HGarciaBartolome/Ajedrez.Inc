@@ -75,7 +75,102 @@ void ListaPiezas::movimiento(Vector2D aux,Casilla casilla)
 {
 	if (casilla.getPieza() == Ficha::ALFILB) {
 		for (int i = 0; i < numAlfil; i++) {
-			if(listaAlfil[i]c)
+			if (listaAlfil[i]->getPosicionX() == casilla.getPosX()) {
+				if (listaAlfil[i]->getPosicionY() == casilla.getPosY()) {
+					listaAlfil[i]->setPosicion(aux.x,aux.y);
+					return;
+				}
+			}
+		}
+	}
+	if (casilla.getPieza() == Ficha::ALFILN) {
+		for (int i = 0; i < numAlfil; i++) {
+			if (listaAlfil[i]->getPosicionX() == casilla.getPosX()) {
+				if (listaAlfil[i]->getPosicionY() == casilla.getPosY()) {
+					listaAlfil[i]->setPosicion(aux.x, aux.y);
+					return;
+				}
+			}
+		}
+	}
+	if (casilla.getPieza() == Ficha::TORREN) {
+		for (int i = 0; i < numTorre; i++) {
+			if (listaTorre[i]->getPosicionX() == casilla.getPosX()) {
+				if (listaTorre[i]->getPosicionY() == casilla.getPosY()) {
+					listaTorre[i]->setPosicion(aux.x, aux.y);
+					return;
+				}
+			}
+		}
+	}
+	if (casilla.getPieza() == Ficha::TORREB) {
+		for (int i = 0; i < numTorre; i++) {
+			if (listaTorre[i]->getPosicionX() == casilla.getPosX()) {
+				if (listaTorre[i]->getPosicionY() == casilla.getPosY()) {
+					listaTorre[i]->setPosicion(aux.x, aux.y);
+					return;
+				}
+			}
+		}
+	}
+	if (casilla.getPieza() == Ficha::REYN) {
+		for (int i = 0; i < numRey; i++) {
+			if (listaRey[i]->getPosicionX() == casilla.getPosX()) {
+				if (listaRey[i]->getPosicionY() == casilla.getPosY()) {
+					listaRey[i]->setPosicion(aux.x, aux.y);
+					return;
+				}
+			}
+		}
+	}
+	if (casilla.getPieza() == Ficha::REYB) {
+		for (int i = 0; i < numRey; i++) {
+			if (listaRey[i]->getPosicionX() == casilla.getPosX()) {
+				if (listaRey[i]->getPosicionY() == casilla.getPosY()) {
+					listaRey[i]->setPosicion(aux.x, aux.y);
+					return;
+				}
+			}
+		}
+	}
+	if (casilla.getPieza() == Ficha::REINAB) {
+		for (int i = 0; i < numReina; i++) {
+			if (listaReina[i]->getPosicionX() == casilla.getPosX()) {
+				if (listaReina[i]->getPosicionY() == casilla.getPosY()) {
+					listaReina[i]->setPosicion(aux.x, aux.y);
+					return;
+				}
+			}
+		}
+	}
+	if (casilla.getPieza() == Ficha::REINAN) {
+		for (int i = 0; i < numReina; i++) {
+			if (listaReina[i]->getPosicionX() == casilla.getPosX()) {
+				if (listaReina[i]->getPosicionY() == casilla.getPosY()) {
+					listaReina[i]->setPosicion(aux.x, aux.y);
+					return;
+				}
+			}
+		}
+	}
+	if (casilla.getPieza() == Ficha::PEONN) {
+		for (int i = 0; i < numPeon; i++) {
+			if (listaPeon[i]->getPosicionX() == casilla.getPosX()) {
+				if (listaPeon[i]->getPosicionY() == casilla.getPosY()) {
+					listaPeon[i]->setPosicion(aux.x, aux.y);
+					return;
+				}
+			}
+		}
+	}
+	if (casilla.getPieza() == Ficha::PEONB) {
+		for (int i = 0; i < numPeon; i++) {
+			if (listaPeon[i]->getPosicionX() == casilla.getPosX()) {
+				if (listaPeon[i]->getPosicionY() == casilla.getPosY()) {
+					listaPeon[i]->setPosicion(aux.x, aux.y);
+					return;
+				}
+			}
 		}
 	}
 }

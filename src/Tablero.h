@@ -13,11 +13,13 @@ class Tablero {
 private:
 	Casilla casilla[8][8];
 	Casilla casillaSeleccionada;
+	Casilla casillaOld;
 	ColorRGB color;
+	bool runMov,runSelec;
 public:
 	Tablero();
 	virtual ~Tablero(){};
-
+	bool Qmov;
 	Vector2D pos;
 	Vector2D aux;
 
@@ -30,4 +32,5 @@ public:
 	bool hacerMovimiento(Vector2D aux);
 	void resetcasillaSelecionada();
 	Casilla getCasilla(Vector2D pos);
+	void Matriz();
 };
