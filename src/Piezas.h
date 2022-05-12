@@ -12,6 +12,7 @@ public:
 	ColorRGB colorGraph;
 	Vector2D posicion;
 
+	Vector2D getPosicion();
 	int getPosicionX();
 	int getPosicionY();
 	void setPosicion(float _x, float _y);

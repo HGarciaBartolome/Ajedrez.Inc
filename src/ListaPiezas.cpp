@@ -71,8 +71,13 @@ bool ListaPiezas::agregarRey(Rey* rey)
 
 }
 
-void ListaPiezas::movimiento(Casilla casilla)
+void ListaPiezas::movimiento(Vector2D aux,Casilla casilla)
 {
+	if (casilla.getPieza() == Ficha::ALFILB) {
+		for (int i = 0; i < numAlfil; i++) {
+			if(listaAlfil[i]c)
+		}
+	}
 }
 
 void ListaPiezas::incializa() {

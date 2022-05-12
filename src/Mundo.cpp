@@ -9,8 +9,8 @@
 Mundo::Mundo()
 {
 	//Se inicializa nuestro mundo con modo comienzo y no final
-	m = COMIENZO;
-	f = NO;
+	m = Modo::COMIENZO;
+	f = Final::NO;
 }
 
 Mundo::~Mundo()
@@ -302,7 +302,13 @@ void Mundo::Mouse(int button, int state, int x, int y)
 	tablero.ilumina(v);
 
 	//FUNCIONES DE SELECCIONAR CASILLAS
+	if (tablero.hacerMovimiento(v)) {
+		Movimiento(v);
+	}
 
-	tablero.seleccionarCasilla(v);
+}
+
+void Mundo::Movimiento(Vector2D aux) {
+	piezas.movimiento(aux,tablero.getcasillaSelecionada());
 
 }

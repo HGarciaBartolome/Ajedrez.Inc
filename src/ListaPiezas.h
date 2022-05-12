@@ -17,7 +17,7 @@ public:
 	bool agregarAlfil(Alfil* a);
 	bool agregarReina(Reina* reina);
 	bool agregarRey(Rey* rey);
-	void movimiento(Casilla casilla);
+	void movimiento(Vector2D aux,Casilla casilla);
 	void incializa();
 	void dibuja();
 private:

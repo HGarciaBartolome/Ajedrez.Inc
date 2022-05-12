@@ -4,6 +4,11 @@ Pieza::Pieza()
 {
 }
 
+Vector2D Pieza::getPosicion()
+{
+	return posicion;
+}
+
 int Pieza::getPosicionX()
 {
 	return posicion.x;

@@ -110,7 +110,7 @@ void Tablero::Inicializa()
 			casilla[i][j].setPieza(Ficha::VACIO);
 		}
 	}
-
+	resetcasillaSelecionada();
 }
 
 Casilla Tablero::getcasillaSelecionada()
@@ -174,6 +174,11 @@ bool Tablero::hacerMovimiento(Vector2D aux)
 		//limpia = NULL;
 	}
 	// TODO: Dibujar
+}
+void Tablero::resetcasillaSelecionada()
+{
+	Casilla* limpia = &casillaSeleccionada;
+	limpia = NULL;
 }
 Casilla Tablero::getCasilla(Vector2D pos)
 {

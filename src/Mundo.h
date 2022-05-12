@@ -27,4 +27,5 @@ public:
 	void tecla(unsigned char key);
 	void inicializa();
 	void Mouse(int button, int state, int x, int y);
+	void Movimiento(Vector2D aux);
 };

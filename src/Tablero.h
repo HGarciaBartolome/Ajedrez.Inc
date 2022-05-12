@@ -28,5 +28,6 @@ public:
 	void desilumina(Vector2D desilu);
 	void seleccionarCasilla(Vector2D pos);
 	bool hacerMovimiento(Vector2D aux);
+	void resetcasillaSelecionada();
 	Casilla getCasilla(Vector2D pos);
 };
