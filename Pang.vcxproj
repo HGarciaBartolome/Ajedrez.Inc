@@ -35,6 +35,7 @@
     <ClInclude Include="src\Alfil.h" />
     <ClInclude Include="src\Casilla.h" />
     <ClInclude Include="src\ColorRGB.h" />
+    <ClInclude Include="src\Ficha.h" />
     <ClInclude Include="src\ListaPiezas.h" />
     <ClInclude Include="src\Mundo.h" />
     <ClInclude Include="src\Peon.h" />

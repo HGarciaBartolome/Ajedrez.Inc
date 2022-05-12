@@ -25,20 +25,34 @@ void Casilla::setPos(int ix, int iy)
 }
 
 
+
+
 void Casilla::setColor(unsigned char r, unsigned char g, unsigned char b) {
 	color.r = r;
 	color.g = g;
 	color.b = b;
 }
 
-Pieza Casilla::getPieza()
+Ficha Casilla::getPieza()
 {
-	return pieza;
+	return ocup;
 }
 
-void Casilla::setPieza(Pieza pieza)
+int Casilla::getPosY()
 {
-	this->pieza = pieza;
+	return y;
+}
+
+
+
+int Casilla::getPosX()
+{
+	return x;
+}
+
+void Casilla::setPieza(Ficha pieza)
+{
+	ocup = pieza;
 }
 
 void Casilla::iluminaCasilla()

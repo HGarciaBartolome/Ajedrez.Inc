@@ -6,6 +6,7 @@
 #include "Reina.h"
 #include "Rey.h"
 #include "Peon.h"
+#include "Ficha.h"
 
 
 class Tablero {
@@ -22,10 +23,10 @@ public:
 
 	void dibuja();
 	void Inicializa();
-
+	Casilla getcasillaSelecionada();
 	void ilumina(Vector2D ilu);
 	void desilumina(Vector2D desilu);
 	void seleccionarCasilla(Vector2D pos);
-	void hacerMovimiento(Vector2D aux);
+	bool hacerMovimiento(Vector2D aux);
 	Casilla getCasilla(Vector2D pos);
 };

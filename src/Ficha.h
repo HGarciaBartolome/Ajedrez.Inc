@@ -1,0 +1,2 @@
+#pragma once
+enum class Ficha { VACIO=-1, REYB, REYN, REINAB, REINAN, TORREB, TORREN, ALFILB, ALFILN, PEONB, PEONN };

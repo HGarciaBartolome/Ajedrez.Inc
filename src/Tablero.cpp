@@ -1,6 +1,6 @@
 #include "Tablero.h"
 #define NCASILLAS 8
-
+#include "Mundo.h"
 Tablero::Tablero() {
 	
 	Casilla c;
@@ -77,29 +77,29 @@ void Tablero::Inicializa()
 {
 
 	//BLANCAS
-	casilla[0][0].setPieza(Torre(false, 0, 0));
-	casilla[2][0].setPieza(Alfil(false,2,0));
-	casilla[3][0].setPieza(Reina(false,3,0));
-	casilla[4][0].setPieza(Rey(false,4,0));
-	casilla[5][0].setPieza(Alfil(false, 5, 0));
-	casilla[7][0].setPieza(Torre(false, 7, 0));
+	casilla[0][0].setPieza(Ficha::TORREB);
+	casilla[2][0].setPieza(Ficha::ALFILB);
+	casilla[3][0].setPieza(Ficha::REINAB);
+	casilla[4][0].setPieza(Ficha::REYB);
+	casilla[5][0].setPieza(Ficha::ALFILB);
+	casilla[7][0].setPieza(Ficha::TORREB);
 	
 	for ( int i = 0; i < 7; i++) {
 		int j = 1;
-		casilla[i][j].setPieza(Peon(false,i,j));
+		casilla[i][j].setPieza(Ficha::PEONB);
 	}
 
 	//NEGRAS
-	casilla[0][7].setPieza(Torre(true, 0, 7));
-	casilla[2][7].setPieza(Alfil(true, 2, 7));
-	casilla[3][7].setPieza(Reina(true, 3, 7));
-	casilla[4][7].setPieza(Rey(true, 4, 7));
-	casilla[5][7].setPieza(Alfil(true, 5, 7));
-	casilla[7][7].setPieza(Torre(true, 7, 7));
+	casilla[0][7].setPieza(Ficha::TORREN);
+	casilla[2][7].setPieza(Ficha::ALFILN);
+	casilla[3][7].setPieza(Ficha::REINAN);
+	casilla[4][7].setPieza(Ficha::REYN);
+	casilla[5][7].setPieza(Ficha::ALFILN);
+	casilla[7][7].setPieza(Ficha::TORREN);
 
 	for ( int i = 0; i < 7; i++) {
 		int j = 6;
-		casilla[i][j].setPieza(Peon(true, i, j));
+		casilla[i][j].setPieza(Ficha::PEONN);
 	}
 
 	//VACIAS
@@ -107,9 +107,15 @@ void Tablero::Inicializa()
 		for (int j = 2; j < 6; j++) {
 			Pieza pVacia;
 			pVacia.setPosicion(i, j);
-			casilla[i][j].setPieza(pVacia);
+			casilla[i][j].setPieza(Ficha::VACIO);
 		}
 	}
+
+}
+
+Casilla Tablero::getcasillaSelecionada()
+{
+	return casillaSeleccionada;
 }
 
 
@@ -150,18 +156,23 @@ void Tablero::seleccionarCasilla(Vector2D pos)
 	// Desiluminar la que estuviera seleccionada antes
 }
 
-void Tablero::hacerMovimiento(Vector2D aux)
+bool Tablero::hacerMovimiento(Vector2D aux)
 {	
 	// TODO: comprobar que se pueda hacer el movimiento
-	
-	// Actualizar a vacio la vieja
-	Pieza pVacia;
-	Pieza piezaActual = casillaSeleccionada.getPieza();
-	casilla[piezaActual.getPosicionX()][piezaActual.getPosicionY()].setPieza(pVacia);
-
-	// Asignar la nueva posicion
-	casilla[aux.x][aux.y].setPieza(piezaActual);
-
+	if (&casillaSeleccionada== NULL){
+		casillaSeleccionada = casilla[aux.x][aux.y];
+		return false;
+	}
+	else {
+		// Actualizar a vacio la vieja
+		Ficha piezaActual = casillaSeleccionada.getPieza();
+		casilla[casillaSeleccionada.getPosX()][casillaSeleccionada.getPosY()].setPieza(Ficha::VACIO);
+		// Asignar la nueva posicion
+		casilla[aux.x][aux.y].setPieza(piezaActual);
+		return true;
+		//Casilla* limpia = &casillaSeleccionada;
+		//limpia = NULL;
+	}
 	// TODO: Dibujar
 }
 Casilla Tablero::getCasilla(Vector2D pos)

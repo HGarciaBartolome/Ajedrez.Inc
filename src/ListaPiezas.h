@@ -7,6 +7,7 @@
 #include "Piezas.h"
 #include "ETSIDI.h"
 #include "freeglut.h"
+#include "Casilla.h"
 #define MAXPIEZAS 64
 class ListaPiezas {
 public:
@@ -16,6 +17,7 @@ public:
 	bool agregarAlfil(Alfil* a);
 	bool agregarReina(Reina* reina);
 	bool agregarRey(Rey* rey);
+	void movimiento(Casilla casilla);
 	void incializa();
 	void dibuja();
 private:

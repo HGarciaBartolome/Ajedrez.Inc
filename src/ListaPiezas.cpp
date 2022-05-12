@@ -71,6 +71,10 @@ bool ListaPiezas::agregarRey(Rey* rey)
 
 }
 
+void ListaPiezas::movimiento(Casilla casilla)
+{
+}
+
 void ListaPiezas::incializa() {
 	
 }
