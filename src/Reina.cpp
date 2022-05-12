@@ -3,7 +3,7 @@
 #include "freeglut.h"
 #define limite 0.5
 
-Reina::Reina(bool _color, int _x, int _y)
+Reina::Reina(bool _color, int _x, int _y) :Pieza(color, posicion.x, posicion.y)
 {
 	color = _color;
 	posicion.x = _x;
@@ -48,6 +48,36 @@ void Reina::Dibuja()
 	}
 }
 
-void Reina::mueve(Vector2D)
-{
+bool Reina::movValido(int destX, int destY) {
+
+	//TORRE
+	if ((destX == getPosicionX()) && (destY == Pieza::getPosicionY())) {
+		return false;
+	}
+	else if ((destX == Pieza::getPosicionX()) || (destY == Pieza::getPosicionY())) {
+		return true;
+	}
+
+	//ALFIL
+	else if ((destX > Pieza::getPosicionX() && destY < Pieza::getPosicionY()) ||		//si el movimiento es abajo a la derecha o arriba izquierda
+		(destX<Pieza::getPosicionX() && destY>Pieza::getPosicionY()))
+	{
+		if ((destX + destY) == (Pieza::getPosicionX() + Pieza::getPosicionY()))
+			return true;
+		else
+			return false;
+	}
+	else if ((destX < Pieza::getPosicionX() && destY < Pieza::getPosicionY()) ||
+		(destX > Pieza::getPosicionX() && destY > Pieza::getPosicionY())) {			//si el movimiento es abajo izquierda o arriba derecha
+		if ((destY - destX) == (Pieza::getPosicionY() - Pieza::getPosicionX()))
+			return true;
+		else
+			return false;
+	}
+	else
+		return false;
+}
+
+char Reina::tipoPieza() {
+	return 'Q';
 }

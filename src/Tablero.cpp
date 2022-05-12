@@ -107,19 +107,15 @@ void Tablero::Inicializa()
 	//VACIAS
 	for (int i = 0; i < 7; i++) {
 		for (int j = 2; j < 6; j++) {
-			Pieza pVacia;
-			pVacia.setPosicion(i, j);
+			//Pieza pVacia;
+			//pVacia.setPosicion(i, j);
 			casilla[i][j].setPieza(Ficha::VACIO);
 		}
 	}
 	//resetcasillaSelecionada();
 }
 
-Casilla Tablero::getcasillaSelecionada()
-{
-	return casillaOld;
-}
-
+/////////////////////////////////////////////////////////////////////////////////////////////////
 
 void Tablero::ilumina(Vector2D ilu)
 {
@@ -150,6 +146,13 @@ void Tablero::desilumina(Vector2D desilu)
 
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Casilla Tablero::getcasillaSelecionada()
+{
+	return casillaOld;
+}
+
 void Tablero::seleccionarCasilla(Vector2D pos)
 {
 	if (runSelec == false) {
@@ -160,33 +163,26 @@ void Tablero::seleccionarCasilla(Vector2D pos)
 		casillaSeleccionada = getCasilla(pos);
 		runSelec = false;
 	}
-	// Iluminar casilla
-	// Desiluminar la que estuviera seleccionada antes
 }
 
 bool Tablero::hacerMovimiento(Vector2D aux)
 {	
-	// TODO: comprobar que se pueda hacer el movimiento
 	if(runMov==false){
 		runMov = true;
 	}
 	else {
-		//std::cout << casillaOld.getPosX() << " # " << casillaOld.getPosY() << " # " << int(casillaOld.getPieza()) << "\n";
-		// Actualizar a vacio la vieja
+
 		if (casillaOld.getPieza() != Ficha::VACIO) {
 			Ficha piezaActual = casillaOld.getPieza();
-			casilla[casillaOld.getPosX()][casillaOld.getPosY()].setPieza(Ficha::VACIO);
+			casilla[casillaOld.getPosX()][casillaOld.getPosY()].setPieza(Ficha::VACIO);	//si en la casilla que he seleccionado hay una pieza, dejo vacia esa casilla
 
-			// Asignar la nueva posicion
-			casilla[casillaSeleccionada.getPosX()][casillaSeleccionada.getPosY()].setPieza(piezaActual);
+
+			casilla[casillaSeleccionada.getPosX()][casillaSeleccionada.getPosY()].setPieza(piezaActual);	//poner la pieza en la nueva casilla
 			Qmov = true;
 			runMov = false;
 			return true;
 		}
 	}
-		//Casilla* limpia = &casillaSeleccionada;
-		//limpia = NULL;
-	// TODO: Dibujar
 }
 void Tablero::resetcasillaSelecionada()
 {

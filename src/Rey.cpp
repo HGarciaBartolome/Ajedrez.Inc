@@ -3,7 +3,9 @@
 #include "freeglut.h"
 #define limite 0.5
 
-Rey::Rey(bool _color, int _x, int _y)
+#define ENROQUE 2
+
+Rey::Rey(bool _color, int _x, int _y) :Pieza(color, posicion.x, posicion.y)
 {
 	color = _color;
 	posicion.x = _x;
@@ -48,6 +50,59 @@ void Rey::Dibuja()
 	}
 }
 
-void Rey::mueve(Vector2D)
-{
+bool Rey::movValido(int destX, int destY) {
+
+	bool enroque = false;
+	int x = Pieza::getPosicionX();
+	int y = Pieza::getPosicionY();
+
+
+	if (primerMov) { // si es el primer movimiento
+		if (abs(destX - Pieza::getPosicionX()) == 2 && (destY == Pieza::getPosicionY())) { //y es movimiento tipo enroque
+			return ENROQUE;
+			enroque = true;
+		}
+	}
+
+	if (!enroque) {
+
+		if (destY == y + 1) // si el destino es hacia arriba
+			if (destX == x - 1) // y en diagonal izquierda
+				return true;
+			else if (destX == x)//misma columna
+				return true;
+			else if (destX == x + 1) // en diagonal derecha
+				return true;
+			else
+				return false;
+
+
+		else if (destY == y) //si el destino es en la misma fila
+			if (destX == x - 1) //hacia la izquierda
+				return true;
+			else if (destX == x + 1)//hacia la derecha
+				return true;
+			else
+				return false;
+
+
+		else if (destY == y - 1) //si el destino es hacia abajo 
+			if (destX == x - 1)//hacia la izquierda
+				return true;
+			else if (destX == x) //misma columna
+				return true;
+			else if (destX == x + 1)//hacia la derecha
+				return true;
+			else
+				return false;
+
+
+		else
+			return false;
+	}
+}
+
+
+char Rey::tipoPieza() {
+	return 'K';
 }

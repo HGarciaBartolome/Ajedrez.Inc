@@ -6,10 +6,11 @@ class Reina :public Pieza {
 private:
 
 public:
+	Reina() {};
 	Reina(bool _color, int _x, int _y);
 	~Reina() {};
 
 	void Dibuja();
-	void mueve(Vector2D);
-	
+	bool movValido(int destX, int destY);
+	char tipoPieza();
 };

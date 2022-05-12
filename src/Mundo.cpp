@@ -298,10 +298,10 @@ void Mundo::Mouse(int button, int state, int x, int y)
 		}
 
 	}
-
+	//FUNCIONES ILU/DESILUMINAR CASILLA SELECCIONADA
 	tablero.desilumina(v);
-	
 	tablero.ilumina(v);
+
 	//FUNCIONES DE SELECCIONAR CASILLAS
 	//if () {
 	//Movimiento(v);

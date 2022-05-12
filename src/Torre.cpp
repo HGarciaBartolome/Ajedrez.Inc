@@ -4,7 +4,7 @@
 #include "Piezas.h"
 #define limite 0.5
 
-Torre::Torre(bool _color, int _x, int _y)
+Torre::Torre(bool _color, int _x, int _y) :Pieza(color, posicion.x, posicion.y)
 {
 	color = _color;
 	posicion.x = _x;
@@ -49,6 +49,22 @@ void Torre::Dibuja()
 	}
 }
 
-void Torre::mueve(Vector2D)
-{
+
+bool Torre::movValido(int destX, int destY) {
+	if ((destX == Pieza::getPosicionX()) && (destY == Pieza::getPosicionY())) {
+		return false;
+	}
+	else {
+		if ((destX == Pieza::getPosicionX()) || (destY == Pieza::getPosicionY())) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
 }
+
+char Torre::tipoPieza() {
+	return 'T';
+}
+

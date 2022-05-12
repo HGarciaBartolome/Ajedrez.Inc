@@ -1,23 +1,198 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(514,5): warning MSB8028: El directorio intermedio (tmp\Debug\) contiene archivos compartidos de otro proyecto (Pang.vcxproj). Esto puede dar lugar a un comportamiento incorrecto de limpieza y recompilación.
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: El directorio intermedio (tmp\Debug\) contiene archivos compartidos de otro proyecto (Pang.vcxproj). Esto puede dar lugar a un comportamiento incorrecto de limpieza y recompilación.
+  Ajedrez.cpp
+  Alfil.cpp
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(23,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(23,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(23,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(24,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(24,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(24,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(25,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(25,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(25,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(26,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(26,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(26,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(40,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(40,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(40,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(41,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(41,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(41,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(42,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(42,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(42,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(43,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(43,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Alfil.cpp(43,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+  Casilla.cpp
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Casilla.cpp(14,27): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Casilla.cpp(14,15): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Casilla.cpp(15,27): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Casilla.cpp(15,15): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Casilla.cpp(16,27): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Casilla.cpp(16,15): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Casilla.cpp(17,27): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Casilla.cpp(17,15): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Casilla.cpp(24,6): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Casilla.cpp(25,6): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Casilla.cpp(44,9): warning C4244: 'return': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Casilla.cpp(51,9): warning C4244: 'return': conversión de 'float' a 'int'; posible pérdida de datos
   ListaPiezas.cpp
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(80,42): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(80,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(90,43): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(90,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(100,43): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(100,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(110,43): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(110,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(120,41): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(120,34): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(130,41): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(130,34): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(140,43): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(140,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(150,43): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(150,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(160,42): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(160,35): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(170,42): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Hector\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(170,35): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-  Pang.vcxproj -> C:\Users\Hector\source\repos\Ajedrez.Inc\bin\Ajedrez.exe
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(80,42): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(80,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(90,43): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(90,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(100,43): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(100,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(110,43): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(110,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(120,41): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(120,34): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(130,41): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(130,34): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(140,43): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(140,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(150,43): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(150,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(160,42): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(160,35): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(170,42): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\ListaPiezas.cpp(170,35): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  Mundo.cpp
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Mundo.cpp(75,49): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Mundo.cpp(76,48): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Mundo.cpp(77,46): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Mundo.cpp(78,47): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Mundo.cpp(106,49): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Mundo.cpp(107,48): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Mundo.cpp(108,46): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Mundo.cpp(109,47): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Mundo.cpp(127,49): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Mundo.cpp(128,48): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Mundo.cpp(129,46): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Mundo.cpp(130,47): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Mundo.cpp(149,49): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Mundo.cpp(150,48): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Mundo.cpp(151,46): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Mundo.cpp(152,47): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+  Peon.cpp
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(30,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(30,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(30,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(31,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(31,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(31,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(32,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(32,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(32,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(33,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(33,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(33,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(47,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(47,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(47,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(48,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(48,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(48,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(49,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(49,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(49,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(50,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(50,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(50,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(64,21): warning C4305: 'return': truncamiento de 'int' a 'bool'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(68,21): warning C4305: 'return': truncamiento de 'int' a 'bool'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(73,18): warning C4305: 'return': truncamiento de 'int' a 'bool'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(80,20): warning C4305: 'return': truncamiento de 'int' a 'bool'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(85,19): warning C4305: 'return': truncamiento de 'int' a 'bool'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(96,21): warning C4305: 'return': truncamiento de 'int' a 'bool'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(100,21): warning C4305: 'return': truncamiento de 'int' a 'bool'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(105,18): warning C4305: 'return': truncamiento de 'int' a 'bool'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(113,20): warning C4305: 'return': truncamiento de 'int' a 'bool'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(118,17): warning C4305: 'return': truncamiento de 'int' a 'bool'
+  Piezas.cpp
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Piezas.cpp(23,15): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Piezas.cpp(24,15): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  Reina.cpp
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(23,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(23,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(23,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(24,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(24,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(24,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(25,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(25,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(25,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(26,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(26,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(26,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(40,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(40,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(40,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(41,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(41,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(41,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(42,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(42,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(42,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(43,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(43,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Reina.cpp(43,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+  Rey.cpp
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(25,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(25,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(25,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(26,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(26,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(26,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(27,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(27,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(27,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(28,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(28,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(28,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(42,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(42,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(42,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(43,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(43,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(43,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(44,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(44,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(44,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(45,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(45,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(45,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(62,18): warning C4305: 'return': truncamiento de 'int' a 'bool'
+  Tablero.cpp
+  Torre.cpp
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(24,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(24,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(24,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(25,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(25,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(25,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(26,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(26,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(26,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(27,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(27,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(27,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(41,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(41,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(41,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(42,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(42,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(42,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(43,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(43,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(43,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(44,80): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(44,66): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Torre.cpp(44,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+  Generando código...
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Tablero.cpp(186): warning C4715: 'Tablero::hacerMovimiento': no todas las rutas de acceso de control devuelven un valor
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Rey.cpp(103): warning C4715: 'Rey::movValido': no todas las rutas de acceso de control devuelven un valor
+C:\Users\Alvaro\source\repos\Ajedrez.Inc\src\Peon.cpp(122): warning C4715: 'Peon::movValido': no todas las rutas de acceso de control devuelven un valor
+  Pang.vcxproj -> C:\Users\Alvaro\source\repos\Ajedrez.Inc\bin\Ajedrez.exe

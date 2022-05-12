@@ -6,12 +6,12 @@ class Alfil :public Pieza {
 private:
 
 public:
+	Alfil() {};
 	Alfil(bool _color, int _x, int _y);
 	~Alfil() {};
 
 	void Dibuja();
-	
-	void mueve(Vector2D);
-	bool puedeMover(int ix, int iy, Pieza* p);
+	bool movValido(int destX, int destY);
+	char tipoPieza();
 
 };

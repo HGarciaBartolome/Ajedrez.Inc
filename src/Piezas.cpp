@@ -1,12 +1,11 @@
 #include "Piezas.h"
 
-Pieza::Pieza()
+Pieza::Pieza(bool _color, int _x, int _y)
 {
-}
+	color = _color;
+	posicion.x = _x;
+	posicion.y = _y;
 
-Vector2D Pieza::getPosicion()
-{
-	return posicion;
 }
 
 int Pieza::getPosicionX()
@@ -25,7 +24,16 @@ void Pieza::setPosicion(float _x, float _y)
 	posicion.y = _y;
 }
 
-void Pieza::setColor(unsigned char r, unsigned char v, unsigned char a)
+char Pieza::tipoPieza()
 {
+	return 0;
+}
 
+void Pieza::Dibuja()
+{
+}
+
+bool Pieza::movValido(int destX, int destY)
+{
+	return false;
 }

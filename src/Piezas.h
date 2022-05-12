@@ -7,18 +7,19 @@ class Pieza {
 protected:
 	bool color;// True = Negras , False = Blancas
 public:
-	Pieza();
+	Pieza() {};
+	Pieza(bool _color, int _x, int _y);
 	virtual ~Pieza() {};
-	ColorRGB colorGraph;
 	Vector2D posicion;
 
-	Vector2D getPosicion();
+	//Vector2D getPosicion();
 	int getPosicionX();
 	int getPosicionY();
 	void setPosicion(float _x, float _y);
-	void setColor(unsigned char r, unsigned char v, unsigned char a);
 
-
+	virtual char tipoPieza();
+	virtual void Dibuja();
+	virtual bool movValido(int destX, int destY);
 
 
 };
