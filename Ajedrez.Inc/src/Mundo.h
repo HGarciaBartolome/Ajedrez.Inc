@@ -16,7 +16,7 @@ public:
 	Vector2D v;
 	Vector2D guarda;
 	
-	enum Modo {COMIENZO, PVP, AYUDA};
+	enum Modo {COMIENZO, PVPclasico, chess960,  AYUDA};
 	Modo m;
 
 	enum Final {J1, J2, NO};
