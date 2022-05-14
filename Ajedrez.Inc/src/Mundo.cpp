@@ -4,6 +4,7 @@
 #include "Alfil.h"
 #include "Reina.h"
 #include "Rey.h"
+#include "Caballo.h"
 #include <math.h>
 
 Mundo::Mundo()
@@ -23,9 +24,13 @@ void Mundo::tecla(unsigned char key)
 	{
 		if (key == '1')
 		{
-			m = PVP;
+			m = PVPclasico;
 		}
 		if (key == '2')
+		{
+			m = chess960;
+		}
+		if (key == '3')
 		{
 			m = AYUDA;
 		}
@@ -37,7 +42,11 @@ void Mundo::tecla(unsigned char key)
 	{
 		if (key == '1')
 		{
-			m = PVP;
+			m = PVPclasico;
+		}
+		if (key == '2')
+		{
+			m = chess960;
 		}
 		if (key == 'e' || key == 'E')
 		{
@@ -81,8 +90,8 @@ void Mundo::dibuja() {
 		glDisable(GL_TEXTURE_2D);
 	}
 
-		//si el modo ahora es PVP y no ha acabado, se dibuja el tablero
-	else if (m == PVP && f == NO)
+		//si el modo ahora es PVPclasico y no ha acabado, se dibuja el tablero
+	else if (m == PVPclasico && f == NO)
 	{
 		gluLookAt(x_ojo, y_ojo, z_ojo,
 			4.0, y_ojo, 0.0,
@@ -112,8 +121,21 @@ void Mundo::dibuja() {
 		glEnable(GL_LIGHTING);
 		glDisable(GL_TEXTURE_2D);
 	}
-	//acaba el PVP y gana el J1
-	else if (f == J1 && m == PVP)
+
+	//si el modo ahora es chess960 y no ha acabado, se dibuja el tablero
+	else if (m == chess960 && f == NO)
+	{
+		gluLookAt(x_ojo, y_ojo, z_ojo,
+			4.0, y_ojo, 0.0,
+			0.0, 1.0, 0.0);
+
+		tablero.dibuja2();
+		if (!tablero.estaInicializado2())
+			tablero.Inicializa2();
+	}
+
+	//acaba el PVPclasico y gana el J1
+	else if (f == J1 && m == PVPclasico)
 	{
 		gluLookAt(0, 7.5, 30, // posicion del ojo
 			0.0, 7.5, 0.0, // hacia que punto mira (0,7.5,0)
@@ -134,8 +156,8 @@ void Mundo::dibuja() {
 		glDisable(GL_TEXTURE_2D);
 
 	}
-	//acaba el PVP y gana el J2
-	else if (f == J2 && m == PVP)
+	//acaba el PVPclasico y gana el J2
+	else if (f == J2 && m == PVPclasico)
 	{
 		gluLookAt(0, 7.5, 30, // posicion del ojo
 			0.0, 7.5, 0.0, // hacia que punto mira (0,7.5,0)
@@ -154,6 +176,51 @@ void Mundo::dibuja() {
 		glEnd();
 		glEnable(GL_LIGHTING);
 		glDisable(GL_TEXTURE_2D);
+
+	}
+
+	//acaba el chess960 y gana el J1
+	else if (f == J1 && m == chess960)
+	{
+	gluLookAt(0, 7.5, 30, // posicion del ojo
+		0.0, 7.5, 0.0, // hacia que punto mira (0,7.5,0)
+		0.0, 1.0, 0.0); // definimos hacia arriba (eje Y)
+	//Ponemos fondo a la pantalla de incicio)
+	glEnable(GL_TEXTURE_2D);
+	glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("imagenes/GanaJ1.png").id);
+	//dibujo del plano donde está la foto
+	glDisable(GL_LIGHTING);
+	glBegin(GL_POLYGON);
+	glColor3f(1, 1, 1);
+	glTexCoord2d(0, 1); glVertex3f(-15, -3.5, -0.1);
+	glTexCoord2d(1, 1); glVertex3f(15, -3.5, -0.1); //se elige donde poner la imagen de fondo. ponemos -0.1 en z para que esté de fondo
+	glTexCoord2d(1, 0); glVertex3f(15, 20, -0.1);
+	glTexCoord2d(0, 0); glVertex3f(-15, 20, -0.1);
+	glEnd();
+	glEnable(GL_LIGHTING);
+	glDisable(GL_TEXTURE_2D);
+
+	}
+	//acaba el chess960 y gana el J2
+	else if (f == J2 && m == chess960)
+	{
+	gluLookAt(0, 7.5, 30, // posicion del ojo
+		0.0, 7.5, 0.0, // hacia que punto mira (0,7.5,0)
+		0.0, 1.0, 0.0); // definimos hacia arriba (eje Y)
+	//Ponemos fondo a la pantalla de incicio)
+	glEnable(GL_TEXTURE_2D);
+	glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("imagenes/GanaJ2.png").id);
+	//dibujo del plano donde está la foto
+	glDisable(GL_LIGHTING);
+	glBegin(GL_POLYGON);
+	glColor3f(1, 1, 1);
+	glTexCoord2d(0, 1); glVertex3f(-15, -3.5, -0.1);
+	glTexCoord2d(1, 1); glVertex3f(15, -3.5, -0.1); //se elige donde poner la imagen de fondo. ponemos -0.1 en z para que esté de fondo
+	glTexCoord2d(1, 0); glVertex3f(15, 20, -0.1);
+	glTexCoord2d(0, 0); glVertex3f(-15, 20, -0.1);
+	glEnd();
+	glEnable(GL_LIGHTING);
+	glDisable(GL_TEXTURE_2D);
 
 	}
 	
