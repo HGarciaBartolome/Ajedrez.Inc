@@ -6,6 +6,7 @@
 #include "Reina.h"
 #include "Rey.h"
 #include "Peon.h"
+#include "Caballo.h"
 #include "PiezaVacia.h"
 
 
@@ -14,7 +15,9 @@ private:
 	Casilla casilla[8][8];
 	Casilla casillaSeleccionada;
 	ColorRGB color;
-	bool inicializado;
+	bool inicializado, inicializado2;
+	Pieza* pieza;
+
 public:
 	Tablero();
 	virtual ~Tablero(){};
@@ -23,9 +26,13 @@ public:
 	Vector2D aux;
 
 	void dibuja();
+	void dibuja2();
 	void Inicializa();
+	void Inicializa2();
 
 	bool estaInicializado();
+	bool estaInicializado2();
+
 	bool hayPiezaDelMismoColor(Vector2D pos);
 	void ilumina(Vector2D ilu);
 	void desilumina(Vector2D desilu);
