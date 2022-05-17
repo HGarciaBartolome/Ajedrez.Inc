@@ -54,8 +54,6 @@ bool Caballo::movValido(int destX, int destY, ColorPieza c)
 	int x = Pieza::getPosicionX();
 	int y = Pieza::getPosicionY();
 
-	if (((abs(x - destX) == 1) && (abs(y - destY) == 2)) || ((abs(x - destX) == 2) && (abs(y - destY == 1)))) {
-
 		if (x == destX || y == destY) {
 			return false;
 		}
@@ -82,11 +80,8 @@ bool Caballo::movValido(int destX, int destY, ColorPieza c)
 				return false;
 			}
 		}
-		else
+		else if (((abs(x - destX) == 1) && (abs(y - destY) == 2)) || ((abs(x - destX) == 2) && (abs(y - destY == 1))))
 			return true;
-	}
-	else
-		return false;
 }
 
 Vector2D* Caballo::getTrayectoria(Vector2D origen, Vector2D destino)
