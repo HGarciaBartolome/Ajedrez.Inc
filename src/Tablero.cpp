@@ -719,44 +719,6 @@ void Tablero::hacerCoronamiento(int x, int y)
 		casilla[x][y].setPieza(new Reina(ColorPieza::Negra, Vector2D(x, y)));
 	}
 }
-////////////////////////////////////JAQUES/////////////////////////////////////////
-
-//bool Tablero::hayJaque() {
-//	
-//	return 0;
-//
-//}
-//
-//
-//Casilla Tablero::buscarRey(ColorPieza color) {
-//bool encontro = false;
-//	int i = 0;
-//
-//	do {
-//		for (int i = 0; i < 8; i++) {
-//			for (int j = 0; j < 8; j++) {
-//				casilla[i][j];
-//
-//				if (casilla[i][j].getPieza() && casilla[i][j].getPieza()->tipoPieza() == 'K' && casilla[i][j].getPieza()->getColor() != color) {
-//					return casilla[i][j];
-//					encontro = true;
-//				}
-//			}
-//		}
-//	} while (!encontro);
-//}
-//
-//bool Tablero::buscarJaque(Vector2D pos)
-//{
-//	//std::vector<Vector2D*> posiblesTrayectorias(4);
-//	//Casilla casillaRey;
-//
-//	//posiblesTrayectorias = casilla[pos.x][pos.y].getPieza()->getPosiblesTrayectorias(pos);
-//
-//	//casillaRey = buscarRey(casilla[pos.x][pos.y].getPieza()->getColor());
-//
-//	return 0;
-//}
 
 void Tablero::captura(char tipo, ColorPieza color)
 {
@@ -776,52 +738,6 @@ void Tablero::captura(char tipo, ColorPieza color)
 	}
 
 	else {
-		/*if (color == 1) {
-			switch (tipo) {
-			case 'A':
-				std::cout << "Captura Alfil Negro" << std::endl;
-			case 'C':
-				std::cout << "Captura Caballo Negro" << std::endl;
-			case 'CT':
-				std::cout << "Captura Cristobal Negro" << std::endl;
-			case 'MH':
-				std::cout << "Captura Miguel Negro" << std::endl;
-			case 'SS':
-				std::cout << "Captura Pablo Negro" << std::endl;
-			case 'P':
-				std::cout << "Captura Peon Negro" << std::endl;
-			case 'Q':
-				std::cout << "Captura Dama Negra" << std::endl;
-			case 'K':
-				std::cout << "Captura Rey Negro" << std::endl;
-			case 'T':
-				std::cout << "Captura Torre Negra" << std::endl;
-			}
-		
-		}
-		else if (color == 0){
-			switch (tipo) {
-			case 'A':
-				std::cout << "Captura Alfil Blanco" << std::endl;
-			case 'C':
-				std::cout << "Captura Caballo Blanco" << std::endl;
-			case 'CT':
-				std::cout << "Captura Cristobal Blanco" << std::endl;
-			case 'MH':
-				std::cout << "Captura Miguel Blanco" << std::endl;
-			case 'SS':
-				std::cout << "Captura Pablo Blanco" << std::endl;
-			case 'P':
-				std::cout << "Captura Peon Blanco" << std::endl;
-			case 'Q':
-				std::cout << "Captura Dama Blanco" << std::endl;
-			case 'K':
-				std::cout << "Captura Rey Blanco" << std::endl;
-			case 'T':
-				std::cout << "Captura Torre Blanco" << std::endl;
-			}
-		}*/
-
 		if (color == 1)
 			std::cout << "Captura	" << tipo << " Negro/a " << std::endl;
 		else if (color == 0)
@@ -829,22 +745,3 @@ void Tablero::captura(char tipo, ColorPieza color)
 
 	}
 }
-
-//void Tablero::fichasETSIDI(char tipo) {
-//
-//	if (tipo == 'SS') {
-//	std::cout << "Has seleccionado a Pablo San Segundo: " << std::endl;
-//	std::cout << "Puedes mover 1 o 2 casillas en vertical u horizontal con la posibilidad de saltar fichas" << std::endl;
-//	}
-//
-//	else if (tipo == 'CT') {
-//	std::cout << "Has seleccionado a Cristobal Tapia: " << std::endl;
-//	std::cout << "Puedes mover 1 o 2 casillas en diagonal con la posibilidad de saltar fichas" << std::endl;
-//	}
-//
-//	else if (tipo == 'MH') {
-//	std::cout << "Has seleccionado a MH: " << std::endl;
-//	std::cout << "Eres un SuperCaballo, puedes moverte tanto 2 como 3 a lo largo en forma de 'L' " << std::endl;
-//	}
-//
-//}

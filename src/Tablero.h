@@ -89,5 +89,4 @@ public:
 	Casilla getCasillaSeleccionada();
 	bool posibleEnroque(Vector2D pos);
 	void captura(char tipo, ColorPieza color);
-	//void fichasETSIDI(char tipo);
 };

@@ -7,7 +7,6 @@ Mundo mundo;
 void OnDraw(void); //Para dibujar
 void OnTimer(int value); //Temporizacion
 void OnKeyboardDown(unsigned char key, int x, int y); //Para pulsar tecla	
-void OnSpecialKeyboardDown(int key, int x, int y);
 void onMouse(int button, int state, int x, int y);//Para hacer click
 
 int main(int argc,char* argv[])
@@ -30,7 +29,6 @@ int main(int argc,char* argv[])
 	glutDisplayFunc(OnDraw);
 	glutTimerFunc(25,OnTimer,0);
 	glutKeyboardFunc(OnKeyboardDown);
-	glutSpecialFunc(OnSpecialKeyboardDown);
 	glutMouseFunc(onMouse);
 	mundo.inicializa();
 		
@@ -61,10 +59,6 @@ void OnKeyboardDown(unsigned char key, int x_t, int y_t)
 	mundo.tecla(key);
 
 	glutPostRedisplay();
-}
-
-void OnSpecialKeyboardDown(int key, int x, int y)
-{
 }
 
 void OnTimer(int value)
